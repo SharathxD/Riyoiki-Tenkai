@@ -7,13 +7,13 @@ import { Button } from "@/components/ui/button"
 import { Expand, X } from "lucide-react"
 
 const drawings = [
-  { id: 1, src: "/Designer.jpeg?height=600&width=600", alt: "Drawing 1", title: "Cosmic Dreams" },
+  { id: 1, src: "Designer.jpeg?height=600&width=600", alt: "Drawing 1", title: "Cosmic Dreams" },
   { id: 2, src: "Designer.jpeg?height=600&width=600", alt: "Drawing 2", title: "Neon Nights" },
   { id: 3, src: "Designer.jpeg?height=600&width=600", alt: "Drawing 3", title: "Digital Dystopia" },
   { id: 4, src: "Designer.jpeg?height=600&width=600", alt: "Drawing 4", title: "Cyberpunk City" },
   { id: 5, src: "Designer.jpeg?height=600&width=600", alt: "Drawing 5", title: "Quantum Realms" },
   { id: 6, src: "Designer.jpeg?height=600&width=600", alt: "Drawing 6", title: "Astral Projections" },
-  { id: 7, src: "/Designer.jpeg?height=600&width=600", alt: "Drawing 1", title: "Cosmic Dreams" },
+  { id: 7, src: "Designer.jpeg?height=600&width=600", alt: "Drawing 1", title: "Cosmic Dreams" },
   { id: 8, src: "Designer.jpeg?height=600&width=600", alt: "Drawing 2", title: "Neon Nights" },
   { id: 9, src: "Designer.jpeg?height=600&width=600", alt: "Drawing 3", title: "Digital Dystopia" },
   { id: 10, src: "Designer.jpeg?height=600&width=600", alt: "Drawing 4", title: "Cyberpunk City" },
