@@ -7,19 +7,25 @@ import { Button } from "@/components/ui/button"
 import { Expand, X } from "lucide-react"
 
 const drawings = [
-  { id: 1, src: "/placeholder.svg?height=600&width=600", alt: "Drawing 1", title: "Cosmic Dreams" },
-  { id: 2, src: "/placeholder.svg?height=600&width=600", alt: "Drawing 2", title: "Neon Nights" },
-  { id: 3, src: "/placeholder.svg?height=600&width=600", alt: "Drawing 3", title: "Digital Dystopia" },
-  { id: 4, src: "/placeholder.svg?height=600&width=600", alt: "Drawing 4", title: "Cyberpunk City" },
-  { id: 5, src: "/placeholder.svg?height=600&width=600", alt: "Drawing 5", title: "Quantum Realms" },
-  { id: 6, src: "/placeholder.svg?height=600&width=600", alt: "Drawing 6", title: "Astral Projections" },
-]
+  { id: 1, src: "/Designer.jpeg?height=600&width=600", alt: "Drawing 1", title: "Cosmic Dreams" },
+  { id: 2, src: "Designer.jpeg?height=600&width=600", alt: "Drawing 2", title: "Neon Nights" },
+  { id: 3, src: "Designer.jpeg?height=600&width=600", alt: "Drawing 3", title: "Digital Dystopia" },
+  { id: 4, src: "Designer.jpeg?height=600&width=600", alt: "Drawing 4", title: "Cyberpunk City" },
+  { id: 5, src: "Designer.jpeg?height=600&width=600", alt: "Drawing 5", title: "Quantum Realms" },
+  { id: 6, src: "Designer.jpeg?height=600&width=600", alt: "Drawing 6", title: "Astral Projections" },
+  { id: 7, src: "/Designer.jpeg?height=600&width=600", alt: "Drawing 1", title: "Cosmic Dreams" },
+  { id: 8, src: "Designer.jpeg?height=600&width=600", alt: "Drawing 2", title: "Neon Nights" },
+  { id: 9, src: "Designer.jpeg?height=600&width=600", alt: "Drawing 3", title: "Digital Dystopia" },
+  { id: 10, src: "Designer.jpeg?height=600&width=600", alt: "Drawing 4", title: "Cyberpunk City" },
+  { id: 11, src: "Designer.jpeg?height=600&width=600", alt: "Drawing 5", title: "Quantum Realms" },
+  { id: 12, src: "Designer.jpeg?height=600&width=600", alt: "Drawing 6", title: "Astral Projections" },
+];
 
 export default function DrawingGallery() {
-  const [selectedDrawing, setSelectedDrawing] = useState(null)
+  const [selectedDrawing, setSelectedDrawing] = useState(null);
 
   return (
-    <div className="px-4 py-6 sm:px-0">
+    <div className="px-4 py-6 sm:px-0 bg-black text-white">
       <motion.div
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
         initial={{ opacity: 0 }}
@@ -47,7 +53,7 @@ export default function DrawingGallery() {
                   />
                   <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <Button variant="outline" size="icon">
-                      <Expand className="h-6 w-6" />
+                      <Expand className="h-6 w-6 glow-text" />
                     </Button>
                   </div>
                 </div>
@@ -63,25 +69,28 @@ export default function DrawingGallery() {
                         className="object-contain"
                       />
                     </div>
-                    <div className="w-full p-4 bg-gray-800 rounded-b-lg">
-                      <h2 className="text-2xl font-bold text-gray-100">{selectedDrawing.title}</h2>
+                    <div className="w-full p-4 bg-black rounded-b-lg">
+                      <h2 className="text-2xl font-bold glow-text">
+                        {selectedDrawing.title}
+                      </h2>
                     </div>
                     <Button
-                      className="absolute top-2 right-2 bg-gray-800 hover:bg-gray-700"
+                      className="absolute top-2 right-2 bg-black hover:bg-gray-800"
                       size="icon"
                       onClick={() => setSelectedDrawing(null)}
                     >
-                      <X className="h-4 w-4" />
+                      <X className="h-4 w-4 glow-text" />
                     </Button>
                   </div>
                 )}
               </DialogContent>
             </Dialog>
-            <h3 className="mt-2 text-xl font-semibold text-gray-100">{drawing.title}</h3>
+            <h3 className="mt-2 text-xl font-semibold glow-text">
+              {drawing.title}
+            </h3>
           </motion.div>
         ))}
       </motion.div>
     </div>
-  )
+  );
 }
-
