@@ -100,7 +100,7 @@ export default function DrawingGallery() {
                 size="icon"
                 onClick={handleClose}
               >
-                <X className="h-4 w-4 glow-text" />
+
               </Button>
             </div>
           </DialogContent>
